@@ -26,17 +26,18 @@ co(function*() {
     var page_records = [];
     var element_count = yield getElementCount();
 
-    var page_meta_data = JSON.stringify([
+    var page_meta_data = JSON.stringify({
       "record_count_this_page: " : element_count,
       "page_number: " : page_num
-    ])
+    });
+
+    console.log(page_meta_data);
     page_records.push(page_meta_data);
 
     for (var i = 0; i < element_count; i++) {
       yield expandElement(i);
       yield nightmare.wait(1000)
       var record = yield extractInfo();
-      console.log(record);
       record = JSON.stringify(record);
       page_records.push(record);
       out.push(record);
