@@ -18,3 +18,5 @@ Input all your info into electron and hit the next buttons.
 When you reach the main account page the bot should take back over.
 </p>
 
+<p>Note: Another option is to to use Plaid. </p>
+* https://plaid.com/
