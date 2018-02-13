@@ -17,6 +17,7 @@ co(function*() {
   // Set up.
   yield newNightmare();
   yield login();
+  yield nightmare.wait(10000)
   yield setDateRange();
 
   var next_page = true;
