@@ -7,9 +7,12 @@ critical for taxes.</p>
 2. Set your date ranges here(it's preconfigured for 2017):
   * https://github.com/nkiermaier/boa_crawler/blob/master/run.js#L134
 3. `node run.js`
+4. let it run, it will take a while. All of you files should be saved in the root directory of the project
+ * There will be a file per page, and a file called `final.json` which contains the entirety of the scrape.
 
 <p>
 Note:  You may have BoA authentication to undergo at initial login, ie security questions and captchas.
 Input all your info into electron and hit the next buttons.
 When you reach the main account page the bot should take back over.
 </p>
+
