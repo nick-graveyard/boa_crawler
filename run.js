@@ -36,13 +36,14 @@ co(function*() {
 
     for (var i = 0; i < element_count; i++) {
       yield expandElement(i);
-      yield nightmare.wait(1000)
+      yield nightmare.wait(100)
       var record = yield extractInfo();
       record = JSON.stringify(record);
       page_records.push(record);
       out.push(record);
     }
     saveinfoToFileSync("page" + page_num + ".json", page_records);
+    console.log("Records saved:" + page_records.length);
     page_num = page_num + 1;
     next_page = yield hasNextPage();
     if(next_page){
