@@ -1,3 +1,8 @@
+## Note: This app needs more fine tuning and does not return consistent result due to the data and Js structure of the BoA website.  
+* I ended up using Plaid to extract all of my transaction data.
+* https://plaid.com/
+
+----
 
 <p> I needed all my transaction info for tax season and the BoA downloads option is limited and doesn't contain transaction type which is 
 critical for taxes.</p>
